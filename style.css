@@ -172,3 +172,43 @@ button:hover {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .card {
+    grid-template-columns: 1fr; /* Stack image and text vertically */
+    padding: 20px;
+  }
+
+  .card img {
+    max-width: 100%; /* Make images flexible */
+    margin: 0 auto; /* Center the image */
+  }
+
+  .card-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .final-button {
+    padding: 12px 28px;
+    font-size: 0.9rem;
+  }
+}
+
+
